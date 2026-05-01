@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Método REDAÇÃO 900+ | Nota alta em 15 minutos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0a0a;
+    --white: #fafafa;
+    --yellow: #FFD600;
+    --yellow-dark: #D4A900;
+    --red: #E63329;
+    --green: #1BAF6A;
+    --gray-1: #111111;
+    --gray-2: #1e1e1e;
+    --gray-3: #2d2d2d;
+    --gray-4: #4a4a4a;
+    --gray-5: #888888;
+    --gray-6: #c4c4c4;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.03em; line-height: 1.05; }
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 80px 0; }
+
+  /* ── HERO ── */
+  #hero {
+    background: var(--gray-1);
+    padding: 0;
+    border-bottom: 1px solid var(--gray-3);
+  }
+
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 72px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,214,0,0.12);
+    border: 1px solid rgba(255,214,0,0.3);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--yellow);
+    margin-bottom: 28px;
+  }
+  .hero-badge::before { content: '●'; font-size: 8px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .hero-title {
+    font-size: clamp(52px, 9vw, 88px);
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+  }
+  .hero-title .accent { color: var(--yellow); }
+  .hero-title .sub { font-size: clamp(30px, 5vw, 50px); color: var(--gray-5); display: block; margin-top: 4px; }
+
+  .hero-desc {
+    font-size: 19px;
+    color: var(--gray-6);
+    margin: 28px 0 40px;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+  .hero-desc strong { color: var(--white); font-weight: 600; }
+
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--yellow); letter-spacing: 0.02em; }
+  .stat-label { font-size: 12px; color: var(--gray-5); text-transform: uppercase; letter-spacing: 0.1em; }
+
+  .cta-group { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { background: #ffe133; transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-primary .arrow { font-size: 20px; }
+
+  .cta-note { font-size: 13px; color: var(--gray-5); display: flex; align-items: center; gap: 6px; }
+  .cta-note::before { content: '🔒'; font-size: 12px; }
+
+  /* ── DIVIDER ── */
+  .divider { height: 1px; background: var(--gray-3); }
+
+  /* ── PROBLEM ── */
+  #problem { background: var(--black); }
+
+  .section-title { font-size: clamp(38px, 6vw, 60px); margin-bottom: 16px; }
+  .section-lead { font-size: 18px; color: var(--gray-5); margin-bottom: 48px; max-width: 500px; }
+
+  .pain-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+  .pain-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray-3);
+  }
+  .pain-item:first-child { border-top: 1px solid var(--gray-3); }
+  .pain-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(230, 51, 41, 0.12);
+    border: 1px solid rgba(230, 51, 41, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .pain-text { font-size: 17px; color: var(--gray-6); }
+  .pain-text strong { color: var(--white); display: block; font-size: 18px; margin-bottom: 2px; }
+
+  .truth-box {
+    margin-top: 48px;
+    background: var(--gray-2);
+    border: 1px solid var(--gray-3);
+    border-left: 4px solid var(--yellow);
+    border-radius: 4px;
+    padding: 24px 28px;
+  }
+  .truth-box p { font-size: 18px; color: var(--gray-6); }
+  .truth-box p strong { color: var(--white); }
+
+  /* ── MYTHS ── */
+  #myths { background: var(--gray-1); }
+  .myth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--gray-3);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 48px;
+  }
+  .myth-col { padding: 32px; }
+  .myth-col:first-child { border-right: 1px solid var(--gray-3); background: rgba(230,51,41,0.04); }
+  .myth-col:last-child { background: rgba(27,175,106,0.04); }
+  .myth-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .myth-header .dot-red { width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+  .myth-header .dot-green { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+  .myth-items { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .myth-items li { font-size: 15px; color: var(--gray-6); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .myth-items li::before { flex-shrink: 0; margin-top: 3px; font-size: 13px; }
+  .myth-col:first-child .myth-items li::before { content: '✕'; color: var(--red); font-weight: 700; }
+  .myth-col:last-child .myth-items li::before { content: '✓'; color: var(--green); font-weight: 700; }
+
+  /* ── METHOD ── */
+  #method { background: var(--black); }
+
+  .method-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 48px;
+    border: 1px solid var(--gray-3);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .method-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--gray-3);
+    transition: background 0.2s;
+  }
+  .method-step:last-child { border-bottom: none; }
+  .method-step:hover { background: var(--gray-2); }
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: var(--yellow);
+    line-height: 1;
+    min-width: 48px;
+    opacity: 0.6;
+  }
+  .step-content { flex: 1; }
+  .step-title { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 0.02em; margin-bottom: 6px; }
+  .step-desc { font-size: 16px; color: var(--gray-5); }
+
+  .method-callout {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255,214,0,0.06);
+    border: 1px solid rgba(255,214,0,0.2);
+    border-radius: 4px;
+    padding: 20px 24px;
+  }
+  .method-callout .icon { font-size: 32px; }
+  .method-callout p { color: var(--gray-6); font-size: 16px; }
+  .method-callout p strong { color: var(--yellow); }
+
+  /* ── WHAT'S INSIDE ── */
+  #inside { background: var(--gray-1); }
+
+  .modules { display: flex; flex-direction: column; gap: 0; margin-top: 48px; border: 1px solid var(--gray-3); border-radius: 4px; overflow: hidden; }
+  .module {
+    display: flex;
+    gap: 24px;
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--gray-3);
+  }
+  .module:last-child { border-bottom: none; }
+  .module-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background: rgba(255,214,0,0.1);
+    border: 1px solid rgba(255,214,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .module-content { flex: 1; }
+  .module-title { font-weight: 700; font-size: 18px; margin-bottom: 6px; }
+  .module-desc { font-size: 15px; color: var(--gray-5); margin-bottom: 14px; line-height: 1.5; }
+  .module-items { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .module-items li { font-size: 14px; color: var(--gray-6); display: flex; align-items: flex-start; gap: 8px; }
+  .module-items li::before { content: '→'; color: var(--yellow); flex-shrink: 0; font-weight: 700; margin-top: 1px; }
+
+  /* ── PROOF ── */
+  #proof { background: var(--black); }
+
+  .testimonials { display: flex; flex-direction: column; gap: 0; margin-top: 48px; border: 1px solid var(--gray-3); border-radius: 4px; overflow: hidden; }
+  .testimonial {
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--gray-3);
+  }
+  .testimonial:last-child { border-bottom: none; }
+  .testi-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--yellow);
+    border: 1px solid var(--gray-3);
+  }
+  .testi-name { font-weight: 600; font-size: 15px; }
+  .testi-meta { font-size: 13px; color: var(--gray-5); }
+  .testi-badge {
+    background: rgba(27,175,106,0.12);
+    border: 1px solid rgba(27,175,106,0.25);
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .testi-text { font-size: 16px; color: var(--gray-6); line-height: 1.6; font-style: italic; }
+  .testi-text::before { content: '"'; color: var(--yellow); font-style: normal; font-weight: 700; }
+  .testi-text::after { content: '"'; color: var(--yellow); font-style: normal; font-weight: 700; }
+
+  /* ── OFFER ── */
+  #offer { background: var(--gray-1); }
+
+  .offer-box {
+    border: 1px solid var(--gray-3);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 560px;
+    margin: 48px auto 0;
+  }
+  .offer-header {
+    background: var(--yellow);
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .offer-label { font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--black); opacity: 0.6; }
+  .offer-tag { font-size: 13px; font-weight: 700; color: var(--black); background: rgba(0,0,0,0.1); padding: 4px 10px; border-radius: 100px; }
+  .offer-body { padding: 32px 28px; background: var(--gray-2); }
+  .offer-price-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+  .offer-from { font-size: 16px; color: var(--gray-4); text-decoration: line-through; }
+  .offer-price { font-family: 'Bebas Neue', sans-serif; font-size: 72px; color: var(--yellow); line-height: 1; letter-spacing: 0.02em; }
+  .offer-price-note { font-size: 14px; color: var(--gray-5); margin-bottom: 28px; }
+  .offer-includes { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; border-top: 1px solid var(--gray-3); padding-top: 20px; }
+  .offer-includes li { font-size: 15px; color: var(--gray-6); display: flex; align-items: center; gap: 10px; }
+  .offer-includes li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+  .offer-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 17px;
+    padding: 18px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.1s;
+    width: 100%;
+    letter-spacing: 0.01em;
+  }
+  .offer-cta:hover { background: #ffe133; transform: translateY(-1px); }
+  .offer-guarantee {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: rgba(27,175,106,0.07);
+    border: 1px solid rgba(27,175,106,0.2);
+    border-radius: 4px;
+  }
+  .guarantee-icon { font-size: 24px; flex-shrink: 0; }
+  .guarantee-text { font-size: 14px; color: var(--gray-5); line-height: 1.5; }
+  .guarantee-text strong { color: var(--green); }
+
+  /* ── FAQ ── */
+  #faq { background: var(--black); }
+
+  .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 48px; border: 1px solid var(--gray-3); border-radius: 4px; overflow: hidden; }
+  .faq-item { border-bottom: 1px solid var(--gray-3); }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    padding: 22px 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: background 0.15s;
+  }
+  .faq-q:hover { background: var(--gray-2); }
+  .faq-chevron { font-size: 18px; color: var(--yellow); transition: transform 0.2s; flex-shrink: 0; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  .faq-a { display: none; padding: 0 28px 22px; color: var(--gray-5); font-size: 16px; line-height: 1.65; }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── FINAL CTA ── */
+  #final-cta {
+    background: var(--yellow);
+    padding: 80px 0;
+    text-align: center;
+  }
+  #final-cta .eyebrow { color: rgba(0,0,0,0.5); }
+  #final-cta h2 { color: var(--black); font-size: clamp(42px, 7vw, 72px); }
+  #final-cta p { color: rgba(0,0,0,0.6); font-size: 18px; margin: 16px auto 40px; max-width: 480px; }
+  .btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--black);
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 17px;
+    padding: 18px 36px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.1s;
+    letter-spacing: 0.01em;
+  }
+  .btn-dark:hover { background: #1a1a1a; transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--gray-1);
+    border-top: 1px solid var(--gray-3);
+    padding: 32px 0;
+    text-align: center;
+  }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--yellow); letter-spacing: 0.05em; margin-bottom: 12px; }
+  .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
+  .footer-links a { font-size: 13px; color: var(--gray-5); text-decoration: none; }
+  .footer-links a:hover { color: var(--white); }
+  .footer-note { font-size: 12px; color: var(--gray-4); }
+
+  /* ── STICKY BAR ── */
+  .sticky-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--gray-1);
+    border-top: 1px solid var(--gray-3);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  .sticky-bar.visible { transform: translateY(0); }
+  .sticky-price { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--yellow); letter-spacing: 0.02em; }
+  .sticky-note { font-size: 13px; color: var(--gray-5); }
+  .sticky-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.15s;
+  }
+  .sticky-btn:hover { background: #ffe133; }
+
+  @media (max-width: 640px) {
+    .myth-grid { grid-template-columns: 1fr; }
+    .myth-col:first-child { border-right: none; border-bottom: 1px solid var(--gray-3); }
+    .hero-stats { gap: 20px; }
+    .offer-price { font-size: 56px; }
+    .method-step { flex-direction: column; gap: 12px; }
+    .step-num { font-size: 36px; }
+    .sticky-bar .sticky-note { display: none; }
+    .module { flex-direction: column; }
+    .module-icon-wrap { width: 40px; height: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Oferta por tempo limitado &nbsp;·&nbsp; Acesso imediato</div>
+    <h1 class="hero-title">
+      <span class="accent">Nota 900+</span><br>
+      em redação<br>
+      <span class="sub">mesmo sem jeito pra escrita</span>
+    </h1>
+    <p class="hero-desc">
+      Um método que transforma qualquer tema em uma redação pronta em <strong>15 minutos</strong> — sem vocabulário avançado, sem dom, sem horas de estudo.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">2.400+</span>
+        <span class="stat-label">Alunos usando</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">900+</span>
+        <span class="stat-label">Nota média</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">15min</span>
+        <span class="stat-label">Para montar</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7 dias</span>
+        <span class="stat-label">Garantia total</span>
+      </div>
+    </div>
+    <div class="cta-group">
+      <a href="#offer" class="btn-primary">Quero minha redação pronta <span class="arrow">→</span></a>
+      <span class="cta-note">Garantia de 7 dias · Sem risco · R$19,90 pagamento único</span>
+    </div>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="container">
+    <span class="eyebrow">O problema</span>
+    <h2 class="section-title">Você não é culpado.<br>Ninguém te ensinou o jeito certo.</h2>
+    <p class="section-lead">Se você se reconhece em algum desses cenários, o problema não é você — é o método que te ensinaram.</p>
+
+    <ul class="pain-list">
+      <li class="pain-item">
+        <span class="pain-icon">✕</span>
+        <span class="pain-text">
+          <strong>Você trava na hora H</strong>
+          Olha o tema, a folha em branco... e o tempo corre enquanto você não sabe por onde começar.
+        </span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-icon">✕</span>
+        <span class="pain-text">
+          <strong>Escreve, entrega, nota baixa</strong>
+          Você faz seu melhor, mas sempre fica abaixo de 700. E não entende por quê.
+        </span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-icon">✕</span>
+        <span class="pain-text">
+          <strong>Tentou estudar, mas não funciona</strong>
+          Aulas longas, teoria complicada e gramática decorada. E na prova, nada muda.
+        </span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-icon">✕</span>
+        <span class="pain-text">
+          <strong>Você acha que precisa de "dom"</strong>
+          Acredita que boas redações são privilégio de quem nasceu com jeito para escrever.
+        </span>
+      </li>
+    </ul>
+
+    <div class="truth-box">
+      <p>A verdade que ninguém te contou: <strong>toda redação nota 900+ segue o mesmo padrão.</strong> Um padrão que você pode copiar, preencher e adaptar em minutos. Você só nunca viu esse padrão organizado. Agora vai.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- MYTHS -->
+<section id="myths">
+  <div class="container">
+    <span class="eyebrow">Quebrando crenças</span>
+    <h2 class="section-title">Você não precisa de nada disso que te ensinaram.</h2>
+
+    <div class="myth-grid">
+      <div class="myth-col">
+        <div class="myth-header"><span class="dot-red"></span> O que te ensinaram</div>
+        <ul class="myth-items">
+          <li>Ter vocabulário avançado para escrever bem</li>
+          <li>Ler 50 livros por ano para ter repertório</li>
+          <li>Ser "bom em português" ou ter jeito pra escrita</li>
+          <li>Passar horas estudando gramática e teoria</li>
+          <li>Escrever e reescrever até sair algo bom</li>
+        </ul>
+      </div>
+      <div class="myth-col">
+        <div class="myth-header"><span class="dot-green"></span> O que realmente funciona</div>
+        <ul class="myth-items">
+          <li>Seguir uma estrutura que já funciona e comprovadamente tira 900+</li>
+          <li>Usar repertórios coringa que servem para qualquer tema</li>
+          <li>Copiar o molde, preencher com o tema, adaptar e entregar</li>
+          <li>Montar uma redação completa em 15 minutos cronometrados</li>
+          <li>Ter os templates prontos na cabeça antes de entrar na prova</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- METHOD -->
+<section id="method">
+  <div class="container">
+    <span class="eyebrow">A solução</span>
+    <h2 class="section-title">Três passos. Quinze minutos. Nota 900+.</h2>
+    <p class="section-lead">É como ter um "molde invisível" por trás do texto. Enquanto todo mundo tenta aprender, você usa um atalho.</p>
+
+    <div class="method-steps">
+      <div class="method-step">
+        <span class="step-num">01</span>
+        <div class="step-content">
+          <div class="step-title">Copia a estrutura</div>
+          <p class="step-desc">Pega o molde pronto que já garantiu nota 900+ para mais de 2.400 alunos. Introdução, dois desenvolvimentos e conclusão — tudo estruturado.</p>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="step-num">02</span>
+        <div class="step-content">
+          <div class="step-title">Preenche com o tema</div>
+          <p class="step-desc">Substitui os campos com o assunto da sua prova. O banco de frases e os repertórios coringa já estão prontos para encaixar em qualquer tema.</p>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="step-num">03</span>
+        <div class="step-content">
+          <div class="step-title">Adapta e entrega</div>
+          <p class="step-desc">Pequenos ajustes finais, proposta de intervenção pronta e a redação está completa. Tempo médio: 15 minutos. Nota esperada: acima de 880.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="method-callout">
+      <span class="icon">⚡</span>
+      <p>Quem usa o método entra na prova sabendo <strong>exatamente o que vai escrever</strong> antes mesmo de ver o tema.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT'S INSIDE -->
+<section id="inside">
+  <div class="container">
+    <span class="eyebrow">O que você recebe</span>
+    <h2 class="section-title">Tudo que você precisa.<br>Nada que não precisa.</h2>
+
+    <div class="modules">
+      <div class="module">
+        <div class="module-icon-wrap">📘</div>
+        <div class="module-content">
+          <div class="module-title">Estrutura Universal de Redação</div>
+          <p class="module-desc">A espinha dorsal de toda redação 900+. O molde adaptável que funciona com qualquer tema.</p>
+          <ul class="module-items">
+            <li>Introdução pronta com fórmulas adaptáveis</li>
+            <li>Dois modelos de desenvolvimento com argumentos guiados</li>
+            <li>Conclusão com proposta de intervenção completa e sem erros</li>
+          </ul>
+        </div>
+      </div>
+      <div class="module">
+        <div class="module-icon-wrap">🧠</div>
+        <div class="module-content">
+          <div class="module-title">Banco de Frases Inteligentes</div>
+          <p class="module-desc">Frases que funcionam em qualquer tema, organizadas por função. Conectivos que elevam nota automaticamente.</p>
+          <ul class="module-items">
+            <li>Frases para introduzir, conectar e concluir argumentos</li>
+            <li>Conectivos de alto nível que o corretor valoriza</li>
+            <li>Repertórios coringa que encaixam em qualquer assunto</li>
+          </ul>
+        </div>
+      </div>
+      <div class="module">
+        <div class="module-icon-wrap">⚙️</div>
+        <div class="module-content">
+          <div class="module-title">Sistema de Execução em 15 Minutos</div>
+          <p class="module-desc">Como montar, como nunca mais travar, como ganhar pontos fáceis que a maioria ignora.</p>
+          <ul class="module-items">
+            <li>Passo a passo cronometrado para o dia da prova</li>
+            <li>Estratégia anti-bloqueio mental</li>
+            <li>Técnicas para ganhar pontos que poucos alunos conhecem</li>
+          </ul>
+        </div>
+      </div>
+      <div class="module">
+        <div class="module-icon-wrap">🎯</div>
+        <div class="module-content">
+          <div class="module-title">4 Templates Prontos por Tema</div>
+          <p class="module-desc">Redações completas sobre os temas mais recorrentes. Só estudar, absorver e adaptar para a sua prova.</p>
+          <ul class="module-items">
+            <li>Educação — Evasão escolar no Brasil</li>
+            <li>Tecnologia — Fake news e democracia</li>
+            <li>Saúde — Saúde mental dos jovens</li>
+            <li>Sociedade — Violência contra a mulher</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="container">
+    <span class="eyebrow">Resultados reais</span>
+    <h2 class="section-title">Quem usou o método<br>não voltou atrás.</h2>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testi-header">
+          <div class="testi-author">
+            <div class="testi-avatar">LM</div>
+            <div>
+              <div class="testi-name">Larissa M.</div>
+              <div class="testi-meta">ENEM 2025</div>
+            </div>
+          </div>
+          <span class="testi-badge">Nota 880</span>
+        </div>
+        <p class="testi-text">Eu tirava 560 consistentemente. Usei o método uma semana antes da prova e fui pra 880. Não acreditei quando vi a nota.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testi-header">
+          <div class="testi-author">
+            <div class="testi-avatar">RT</div>
+            <div>
+              <div class="testi-name">Rafael T.</div>
+              <div class="testi-meta">Vestibular UNICAMP</div>
+            </div>
+          </div>
+          <span class="testi-badge">Aprovado</span>
+        </div>
+        <p class="testi-text">Sempre travei em redação. Esse método mudou minha relação com a escrita. Em 15 minutos eu tinha uma redação completa, pela primeira vez na vida.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testi-header">
+          <div class="testi-author">
+            <div class="testi-avatar">AC</div>
+            <div>
+              <div class="testi-name">Ana C.</div>
+              <div class="testi-meta">ENEM 2025</div>
+            </div>
+          </div>
+          <span class="testi-badge">Nota 920</span>
+        </div>
+        <p class="testi-text">Simples, direto e que funciona. Os templates prontos são ouro. Entrei na prova sabendo exatamente o que fazer.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testi-header">
+          <div class="testi-author">
+            <div class="testi-avatar">GS</div>
+            <div>
+              <div class="testi-name">Gabriel S.</div>
+              <div class="testi-meta">ENEM 2025</div>
+            </div>
+          </div>
+          <span class="testi-badge">Nota 860</span>
+        </div>
+        <p class="testi-text">Comprei às 22h de véspera. Estudei por 2 horas e fui pra prova com confiança. Melhor R$19 que já gastei na vida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- OFFER -->
+<section id="offer">
+  <div class="container">
+    <span class="eyebrow">A oferta</span>
+    <h2 class="section-title" style="text-align:center;">Tudo isso por menos<br>do que um lanche.</h2>
+
+    <div class="offer-box">
+      <div class="offer-header">
+        <span class="offer-label">Oferta especial — tempo limitado</span>
+        <span class="offer-tag">-70% OFF</span>
+      </div>
+      <div class="offer-body">
+        <div class="offer-price-row">
+          <span class="offer-from">De R$67,00</span>
+        </div>
+        <div class="offer-price">R$19,90</div>
+        <p class="offer-price-note">Pagamento único · Sem assinatura · Acesso imediato</p>
+
+        <ul class="offer-includes">
+          <li>Estrutura Universal de Redação</li>
+          <li>Banco de Frases Inteligentes</li>
+          <li>Sistema de Execução em 15 Minutos</li>
+          <li>4 Templates Prontos por Tema</li>
+          <li>Acesso imediato após o pagamento</li>
+          <li>Garantia total de 7 dias</li>
+        </ul>
+
+        <a href="#" class="offer-cta">Quero minha redação pronta agora →</a>
+
+        <div class="offer-guarantee">
+          <span class="guarantee-icon">🛡️</span>
+          <p class="guarantee-text"><strong>Garantia de 7 dias — risco zero.</strong> Se por qualquer motivo você não ficar satisfeito, basta enviar uma mensagem em até 7 dias e você recebe 100% do seu dinheiro de volta. Sem perguntas, sem enrolação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <span class="eyebrow">Dúvidas frequentes</span>
+    <h2 class="section-title">Tudo que você<br>quer saber.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Para qual prova esse método serve?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">O método funciona para ENEM, vestibulares (USP, UNICAMP, UNESP, etc.), concursos públicos e qualquer prova que exija redação dissertativo-argumentativa.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Funciona mesmo se eu nunca fui bom em redação?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">Sim. O método foi criado especificamente para pessoas que não têm habilidade natural com escrita. Você segue a estrutura e ela faz o trabalho pesado por você.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Em quanto tempo vou ter acesso?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">O acesso é imediato. Assim que o pagamento for confirmado, você recebe o material diretamente no seu e-mail — em questão de minutos.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Isso é um curso ou um produto direto?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">É um material direto — não tem aulas, não tem módulos intermináveis, não tem video-aulas para assistir. Você recebe um PDF organizado que vai diretamente ao ponto. Resultado em minutos, não em semanas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">E se eu não gostar?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">Você tem 7 dias de garantia completa. Se por qualquer motivo não ficou satisfeito, basta pedir o reembolso e devolvemos 100% do valor pago. Sem perguntas, sem burocracia.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso saber escrever bem para usar o método?<span class="faq-chevron">▾</span></button>
+        <div class="faq-a">Não. O método foi desenvolvido justamente para quem não sabe escrever bem — ou que nunca conseguiu organizar os pensamentos na hora da prova. A estrutura guia cada linha do texto.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="final-cta">
+  <div class="container">
+    <span class="eyebrow" style="color:rgba(0,0,0,0.45)">A prova não espera</span>
+    <h2>Você está pronto?</h2>
+    <p>Acesse agora por R$19,90 e nunca mais trave na hora da redação.</p>
+    <a href="#offer" class="btn-dark">Quero o Método REDAÇÃO 900+ →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Método REDAÇÃO 900+™</div>
+  <div class="footer-links">
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Termos de Uso</a>
+    <a href="#">Suporte</a>
+  </div>
+  <p class="footer-note">Este produto é digital e entregue imediatamente após a confirmação do pagamento.<br>© 2025 Método REDAÇÃO 900+™ · Todos os direitos reservados</p>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div>
+    <div class="sticky-price">R$19,90</div>
+    <div class="sticky-note">Pagamento único · Acesso imediato</div>
+  </div>
+  <a href="#offer" class="sticky-btn">Quero agora →</a>
+</div>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Sticky bar
+  const hero = document.getElementById('hero');
+  const stickyBar = document.getElementById('stickyBar');
+  const observer = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) stickyBar.classList.add('visible');
+    else stickyBar.classList.remove('visible');
+  }, { threshold: 0 });
+  observer.observe(hero);
+</script>
+</body>
+</html>
